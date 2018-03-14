@@ -1,0 +1,5 @@
+target 'KarteTrackerSample' do
+  pod 'Firebase/Core'
+  pod 'Firebase/Messaging'
+  pod 'KarteTracker'
+end

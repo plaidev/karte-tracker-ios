@@ -1,0 +1,1 @@
+../../../../KarteTracker/KarteTracker.framework/Headers/KarteTrackerConfig.h
