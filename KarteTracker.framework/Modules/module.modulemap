@@ -1,0 +1,6 @@
+framework module KarteTracker {
+  umbrella header "KarteTracker-umbrella.h"
+
+  export *
+  module * { export * }
+}
