@@ -1,5 +1,5 @@
 framework module KarteTracker {
-  umbrella header "KarteTracker-umbrella.h"
+  umbrella header "KarteTracker.h"
 
   export *
   module * { export * }
