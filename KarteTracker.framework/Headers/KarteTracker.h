@@ -1,17 +1,16 @@
 //
-//  Tracker.h
-//  Pods
+//  KarteTracker.h
+//  KarteTracker
 //
-
-#ifndef Tracker_h
-#define Tracker_h
+//  Copyright (c) 2018 PLAID inc. All rights reserved.
+//
 
 #import <Foundation/Foundation.h>
 #import "KarteTrackerUtil.h"
-#import "KarteTrackerConfig.h"
-#import "KarteTrackerUserProfile.h"
-#import "KarteTrackerAppProfile.h"
+#import "KarteRemoteNotificationHandler.h"
+
 @protocol KarteTrackerDelegate;
+@class KarteTrackerConfig;
 @class KarteUIWindow;
 
 @interface KarteTracker : NSObject
@@ -20,7 +19,8 @@
 
 @property (nonatomic, strong) KarteTrackerConfig *config;
 @property (nonatomic, strong) KarteUIWindow *overlayWindow;
-@property (atomic, weak) id<KarteTrackerDelegate> delegate;
+@property (nonatomic, weak) id<KarteTrackerDelegate> delegate;
+
 + (nullable instancetype)sharedTrackerWithAppKey:(nonnull NSString *)appKey;
 + (nullable instancetype)sharedTracker;
 + (nonnull instancetype)setupWithAppKey:(nonnull NSString *)appKey;
@@ -30,25 +30,20 @@
 - (nonnull instancetype)initWithAppKey:(nonnull NSString *)appKey config:(nullable NSDictionary *)config;
 
 - (void)track:(nonnull NSString *)eventName values:(nullable NSDictionary *)values;
-- (void)trackNotification:(nonnull NSDictionary *)userInfo;
 - (void)trackUncaughtException:(nonnull NSDictionary *)values;
 - (void)identify:(nonnull NSDictionary *)values;
-- (void)view:(nonnull NSString *)view_name;
-- (void)view:(nonnull NSString *)view_name values:(nullable NSDictionary *)values;
+- (void)view:(nonnull NSString *)viewName;
+- (void)view:(nonnull NSString *)viewName values:(nullable NSDictionary *)values;
 - (void)flush;
 
 #pragma mark - Notification
-
 - (void)registerFCMToken:(nonnull NSString *)token;
+- (void)trackNotification:(nonnull NSDictionary *)userInfo;
 
 @end
 
 #pragma mark - Delegate
-
 @protocol KarteTrackerDelegate <NSObject>
 @required
-- (void) karteTracker:(KarteTracker *)tracker
-     receivedResponse:(NSDictionary *)responseBody;
+- (void)karteTracker:(KarteTracker *)tracker receivedResponse:(NSDictionary *)responseBody;
 @end
-
-#endif /* Tracker_h */
