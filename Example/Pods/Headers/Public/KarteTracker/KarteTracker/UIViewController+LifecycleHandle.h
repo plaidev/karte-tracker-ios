@@ -1,1 +1,0 @@
-../../../../KarteTracker/KarteTracker.framework/Headers/UIViewController+LifecycleHandle.h

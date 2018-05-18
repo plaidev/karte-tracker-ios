@@ -7,17 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C33141E208F274A00405420 /* NotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C33141D208F274A00405420 /* NotificationService.m */; };
 		0C331422208F274A00405420 /* NotificationService.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0C33141A208F274A00405420 /* NotificationService.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		0C52715820AEE9210047A186 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2D1823FC205BCFFB00783CE6 /* GoogleService-Info.plist */; };
-		2DF1DA762057B05D00CC56B0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DF1DA752057B05D00CC56B0 /* AppDelegate.m */; };
-		2DF1DA792057B05D00CC56B0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DF1DA782057B05D00CC56B0 /* ViewController.m */; };
+		0C52715020AEDD670047A186 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C52714F20AEDD670047A186 /* AppDelegate.swift */; };
+		0C52715220AEE35A0047A186 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C52715120AEE35A0047A186 /* ViewController.swift */; };
+		0C52715520AEE4A70047A186 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C52715420AEE4A70047A186 /* NotificationService.swift */; };
+		0C52715620AEE6540047A186 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2D1823FC205BCFFB00783CE6 /* GoogleService-Info.plist */; };
 		2DF1DA7C2057B05D00CC56B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DF1DA7A2057B05D00CC56B0 /* Main.storyboard */; };
 		2DF1DA7E2057B05D00CC56B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DF1DA7D2057B05D00CC56B0 /* Assets.xcassets */; };
 		2DF1DA812057B05D00CC56B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DF1DA7F2057B05D00CC56B0 /* LaunchScreen.storyboard */; };
-		2DF1DA842057B05E00CC56B0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DF1DA832057B05D00CC56B0 /* main.m */; };
-		C11B99EA6B890C260B521CA1 /* libPods-NotificationService.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB574F3030033B18B4C5ED68 /* libPods-NotificationService.a */; };
 		C7F86DA10FD81DD2134EFE7A /* libPods-KarteTrackerSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 91758362C86788F149EED5BD /* libPods-KarteTrackerSample.a */; };
+		EC58224210921784B951A700 /* libPods-NotificationService.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2BEDDF2062C9E095FBE79E5 /* libPods-NotificationService.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,26 +45,24 @@
 
 /* Begin PBXFileReference section */
 		0C33141A208F274A00405420 /* NotificationService.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NotificationService.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		0C33141C208F274A00405420 /* NotificationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationService.h; sourceTree = "<group>"; };
-		0C33141D208F274A00405420 /* NotificationService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationService.m; sourceTree = "<group>"; };
 		0C33141F208F274A00405420 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		12905ADD3A82C4BABFCC199B /* Pods-NotificationService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationService.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NotificationService/Pods-NotificationService.debug.xcconfig"; sourceTree = "<group>"; };
+		0C52714E20AEDD660047A186 /* KarteTrackerSample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KarteTrackerSample-Bridging-Header.h"; sourceTree = "<group>"; };
+		0C52714F20AEDD670047A186 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0C52715120AEE35A0047A186 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0C52715320AEE4A70047A186 /* NotificationService-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NotificationService-Bridging-Header.h"; sourceTree = "<group>"; };
+		0C52715420AEE4A70047A186 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		2D1823FC205BCFFB00783CE6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		2DF1DA712057B05D00CC56B0 /* KarteTrackerSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KarteTrackerSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2DF1DA742057B05D00CC56B0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		2DF1DA752057B05D00CC56B0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2DF1DA772057B05D00CC56B0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		2DF1DA782057B05D00CC56B0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		2DF1DA7B2057B05D00CC56B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2DF1DA7D2057B05D00CC56B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2DF1DA802057B05D00CC56B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2DF1DA822057B05D00CC56B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2DF1DA832057B05D00CC56B0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6C107FAB1C8C009947E50644 /* Pods-KarteTrackerSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KarteTrackerSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-KarteTrackerSample/Pods-KarteTrackerSample.release.xcconfig"; sourceTree = "<group>"; };
 		91758362C86788F149EED5BD /* libPods-KarteTrackerSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KarteTrackerSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		962BE02AD43BE96E28D900FC /* Pods-KarteTrackerSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KarteTrackerSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KarteTrackerSample/Pods-KarteTrackerSample.debug.xcconfig"; sourceTree = "<group>"; };
-		AB574F3030033B18B4C5ED68 /* libPods-NotificationService.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NotificationService.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DAB49813EEF195B57FDE72F3 /* Pods-NotificationService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationService.release.xcconfig"; path = "Pods/Target Support Files/Pods-NotificationService/Pods-NotificationService.release.xcconfig"; sourceTree = "<group>"; };
+		9D5CBCEAC9D972E14813F384 /* Pods-NotificationService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationService.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NotificationService/Pods-NotificationService.debug.xcconfig"; sourceTree = "<group>"; };
+		9FC71B5E5177F18B804729D7 /* Pods-NotificationService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationService.release.xcconfig"; path = "Pods/Target Support Files/Pods-NotificationService/Pods-NotificationService.release.xcconfig"; sourceTree = "<group>"; };
+		C2BEDDF2062C9E095FBE79E5 /* libPods-NotificationService.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NotificationService.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C11B99EA6B890C260B521CA1 /* libPods-NotificationService.a in Frameworks */,
+				EC58224210921784B951A700 /* libPods-NotificationService.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,7 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				91758362C86788F149EED5BD /* libPods-KarteTrackerSample.a */,
-				AB574F3030033B18B4C5ED68 /* libPods-NotificationService.a */,
+				C2BEDDF2062C9E095FBE79E5 /* libPods-NotificationService.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -100,9 +97,9 @@
 		0C33141B208F274A00405420 /* NotificationService */ = {
 			isa = PBXGroup;
 			children = (
-				0C33141C208F274A00405420 /* NotificationService.h */,
-				0C33141D208F274A00405420 /* NotificationService.m */,
+				0C52715420AEE4A70047A186 /* NotificationService.swift */,
 				0C33141F208F274A00405420 /* Info.plist */,
+				0C52715320AEE4A70047A186 /* NotificationService-Bridging-Header.h */,
 			);
 			path = NotificationService;
 			sourceTree = "<group>";
@@ -131,15 +128,13 @@
 			isa = PBXGroup;
 			children = (
 				2D1823FC205BCFFB00783CE6 /* GoogleService-Info.plist */,
-				2DF1DA742057B05D00CC56B0 /* AppDelegate.h */,
-				2DF1DA752057B05D00CC56B0 /* AppDelegate.m */,
-				2DF1DA772057B05D00CC56B0 /* ViewController.h */,
-				2DF1DA782057B05D00CC56B0 /* ViewController.m */,
-				2DF1DA7A2057B05D00CC56B0 /* Main.storyboard */,
+				0C52714F20AEDD670047A186 /* AppDelegate.swift */,
+				0C52715120AEE35A0047A186 /* ViewController.swift */,
 				2DF1DA7D2057B05D00CC56B0 /* Assets.xcassets */,
+				2DF1DA7A2057B05D00CC56B0 /* Main.storyboard */,
 				2DF1DA7F2057B05D00CC56B0 /* LaunchScreen.storyboard */,
 				2DF1DA822057B05D00CC56B0 /* Info.plist */,
-				2DF1DA832057B05D00CC56B0 /* main.m */,
+				0C52714E20AEDD660047A186 /* KarteTrackerSample-Bridging-Header.h */,
 			);
 			path = KarteTrackerSample;
 			sourceTree = "<group>";
@@ -149,8 +144,8 @@
 			children = (
 				962BE02AD43BE96E28D900FC /* Pods-KarteTrackerSample.debug.xcconfig */,
 				6C107FAB1C8C009947E50644 /* Pods-KarteTrackerSample.release.xcconfig */,
-				12905ADD3A82C4BABFCC199B /* Pods-NotificationService.debug.xcconfig */,
-				DAB49813EEF195B57FDE72F3 /* Pods-NotificationService.release.xcconfig */,
+				9D5CBCEAC9D972E14813F384 /* Pods-NotificationService.debug.xcconfig */,
+				9FC71B5E5177F18B804729D7 /* Pods-NotificationService.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -162,7 +157,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0C331425208F274A00405420 /* Build configuration list for PBXNativeTarget "NotificationService" */;
 			buildPhases = (
-				2EC3A9EFA31F6EBB9D10F1CE /* [CP] Check Pods Manifest.lock */,
+				8D48B719D88A73AC26FC1D9A /* [CP] Check Pods Manifest.lock */,
 				0C331416208F274A00405420 /* Sources */,
 				0C331417208F274A00405420 /* Frameworks */,
 				0C331418208F274A00405420 /* Resources */,
@@ -207,10 +202,12 @@
 				TargetAttributes = {
 					0C331419208F274A00405420 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
 						ProvisioningStyle = Manual;
 					};
 					2DF1DA702057B05D00CC56B0 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0930;
 						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -252,7 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DF1DA812057B05D00CC56B0 /* LaunchScreen.storyboard in Resources */,
-				0C52715820AEE9210047A186 /* GoogleService-Info.plist in Resources */,
+				0C52715620AEE6540047A186 /* GoogleService-Info.plist in Resources */,
 				2DF1DA7E2057B05D00CC56B0 /* Assets.xcassets in Resources */,
 				2DF1DA7C2057B05D00CC56B0 /* Main.storyboard in Resources */,
 			);
@@ -261,24 +258,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2EC3A9EFA31F6EBB9D10F1CE /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-NotificationService-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		61276070F0887800ACE2330F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -297,6 +276,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		8D48B719D88A73AC26FC1D9A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NotificationService-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -304,7 +301,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C33141E208F274A00405420 /* NotificationService.m in Sources */,
+				0C52715520AEE4A70047A186 /* NotificationService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,9 +309,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DF1DA792057B05D00CC56B0 /* ViewController.m in Sources */,
-				2DF1DA842057B05E00CC56B0 /* main.m in Sources */,
-				2DF1DA762057B05D00CC56B0 /* AppDelegate.m in Sources */,
+				0C52715020AEDD670047A186 /* AppDelegate.swift in Sources */,
+				0C52715220AEE35A0047A186 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,8 +346,9 @@
 /* Begin XCBuildConfiguration section */
 		0C331423208F274A00405420 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 12905ADD3A82C4BABFCC199B /* Pods-NotificationService.debug.xcconfig */;
+			baseConfigurationReference = 9D5CBCEAC9D972E14813F384 /* Pods-NotificationService.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
@@ -364,14 +361,18 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "NotificationService/NotificationService-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		0C331424208F274A00405420 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DAB49813EEF195B57FDE72F3 /* Pods-NotificationService.release.xcconfig */;
+			baseConfigurationReference = 9FC71B5E5177F18B804729D7 /* Pods-NotificationService.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
@@ -384,6 +385,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "NotificationService/NotificationService-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -496,7 +499,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 962BE02AD43BE96E28D900FC /* Pods-KarteTrackerSample.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -509,6 +514,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.karte.tracker.ios.sample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "KarteTrackerSample/KarteTrackerSample-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "$(inherited)";
 			};
@@ -518,7 +526,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6C107FAB1C8C009947E50644 /* Pods-KarteTrackerSample.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -531,6 +541,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.karte.tracker.ios.sample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "KarteTrackerSample/KarteTrackerSample-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = " $(inherited)";
 			};
