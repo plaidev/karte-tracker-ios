@@ -8,9 +8,12 @@
 #import <Foundation/Foundation.h>
 #import "KarteTrackerUtil.h"
 #import "KarteRemoteNotificationHandler.h"
+#import "KarteTrackerJsUtil.h"
 
 @protocol KarteTrackerDelegate;
 @class KarteTrackerConfig;
+@class KarteTrackerUserProfile;
+@class KarteTrackerAppProfile;
 @class KarteUIWindow;
 
 @interface KarteTracker : NSObject
@@ -20,6 +23,8 @@
 @property (nonatomic, strong) KarteTrackerConfig *config;
 @property (nonatomic, strong) KarteUIWindow *overlayWindow;
 @property (nonatomic, weak) id<KarteTrackerDelegate> delegate;
+@property (nonatomic, strong) KarteTrackerUserProfile *userProfile;
+@property (nonatomic, strong) KarteTrackerAppProfile *appProfile;
 
 + (nullable instancetype)sharedTrackerWithAppKey:(nonnull NSString *)appKey;
 + (nullable instancetype)sharedTracker;
