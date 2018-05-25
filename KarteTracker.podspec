@@ -26,4 +26,7 @@ Pod::Spec.new do |s|
   s.vendored_frameworks = 'KarteTracker.framework'
   s.compiler_flags = '-ObjC'
   s.requires_arc = true
+  s.frameworks = [
+    "WebKit"
+  ]
 end
