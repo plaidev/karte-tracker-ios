@@ -25,6 +25,11 @@
 @property (nonatomic, weak) id<KarteTrackerDelegate> delegate;
 @property (nonatomic, strong) KarteTrackerUserProfile *userProfile;
 @property (nonatomic, strong) KarteTrackerAppProfile *appProfile;
+@property (nonatomic) NSUncaughtExceptionHandler *exceptionHandler;
+@property (nonatomic, copy, readonly, nonnull) NSString *visitorId;
+
+
++ (NSString *)version;
 
 + (nullable instancetype)sharedTrackerWithAppKey:(nonnull NSString *)appKey;
 + (nullable instancetype)sharedTracker;
