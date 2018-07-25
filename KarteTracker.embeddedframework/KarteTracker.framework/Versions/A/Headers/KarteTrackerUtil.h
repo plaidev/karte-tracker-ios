@@ -5,17 +5,13 @@
 //  Copyright (c) 2018 PLAID inc. All rights reserved.
 //
 
-//#ifndef KarteTrackerUtil_h
-//#define KarteTrackerUtil_h
-
 #import <Foundation/Foundation.h>
+extern NSString *const kCrashInfoFileName;
 
 void KarteTrackerShowLog(BOOL showLog);
 void KarteTrackerLog(NSString *format, ...);
 void KarteTrackerExceptionHandler(NSException *exception);
 
 NSString * GetTrackerSerializeFilePath(NSString *filename);
-NSString * GetBundleID();
-NSString * GetDeviceName();
-
-//#endif /* KarteTrackerUtil_h */
+NSString * GetBundleID(void);
+NSString * GetDeviceName(void);

@@ -7,26 +7,32 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'KarteTracker'
-  s.version          = '1.2.0'
-  s.summary          = 'KARTE SDK for iOS'
-  s.homepage         = 'https://karte.io/'
-  s.author           = { 'Plaid' => 'dev.share@plaid.co.jp' }
-  s.source           = { :git => 'https://github.com/plaidev/karte-tracker-ios.git', :tag => "v#{s.version}" }
-  s.social_media_url = 'https://twitter.com/karte_io'
-  s.documentation_url = 'https://dash.readme.io/project/karteio/v0.1/docs/ios'
-  s.platform     = :ios
-  s.license      = {
+  s.name                    = 'KarteTracker'
+  s.version                 = '1.2.1'
+  s.summary                 = 'KARTE SDK for iOS'
+  s.homepage                = 'https://karte.io/'
+  s.author                  = { 'Plaid' => 'dev.share@plaid.co.jp' }
+  s.social_media_url        = 'https://twitter.com/karte_io'
+  s.documentation_url       = 'https://karteio.readme.io/docs/ios'
+  s.license                 = {
     :type => 'Commercial',
-    :text => <<-LICENSE
-    Copyright© Plaid Inc., All Rights Reserved.
-    LICENSE
+    :text => 'Copyright© Plaid Inc., All Rights Reserved.'
   }
-  s.ios.deployment_target = '8.0'
-  s.vendored_frameworks = 'KarteTracker.framework'
-  s.compiler_flags = '-ObjC'
-  s.requires_arc = true
-  s.frameworks = [
-    "WebKit"
-  ]
+  s.platform                = :ios
+  s.requires_arc            = true
+  s.ios.deployment_target   = '8.0'
+
+  if ENV['RELEASE'] == 'true' then
+    s.source                = { :git => 'https://github.com/plaidev/karte-tracker-ios.git', :tag => "v#{s.version}" }
+    s.vendored_frameworks   = 'KarteTracker.embeddedframework/KarteTracker.framework'
+    s.resources             = 'KarteTracker.embeddedframework/Resources/KarteTrackerResources.bundle'
+    s.compiler_flags        = '-ObjC'
+    s.ios.frameworks        = 'WebKit'
+  else
+    s.source                = { :git => 'https://github.com/plaidev/tracker-ios.git', :tag => 'v0.0.0' }
+    s.source_files          = 'KarteTracker/Classes/**/*'
+    s.public_header_files   = 'KarteTracker/Classes/Public/*.h'
+    s.private_header_files  = 'KarteTracker/Classes/Private/*.h'
+    s.resource_bundles      = { 'KarteTrackerResources' => 'KarteTracker/Assets/*' }
+  end
 end
