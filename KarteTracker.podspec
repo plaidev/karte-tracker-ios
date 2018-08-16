@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
     s.resources             = 'KarteTracker.embeddedframework/Resources/KarteTrackerResources.bundle'
     s.compiler_flags        = '-ObjC'
     s.ios.frameworks        = 'WebKit'
-    s.ios.weak_framworks    = 'AdSupport'
+    s.ios.weak_frameworks   = 'AdSupport'
   else
     s.source                = { :git => 'https://github.com/plaidev/tracker-ios.git', :tag => 'v0.0.0' }
     s.source_files          = 'KarteTracker/Classes/**/*'
