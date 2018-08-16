@@ -15,3 +15,4 @@ void KarteTrackerExceptionHandler(NSException *exception);
 NSString * GetTrackerSerializeFilePath(NSString *filename);
 NSString * GetBundleID(void);
 NSString * GetDeviceName(void);
+NSString * GetIdfa(void);

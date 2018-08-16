@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name                    = 'KarteTracker'
-  s.version                 = '1.2.2'
+  s.version                 = '1.2.3'
   s.summary                 = 'KARTE SDK for iOS'
   s.homepage                = 'https://karte.io/'
   s.author                  = { 'Plaid' => 'dev.share@plaid.co.jp' }
@@ -28,6 +28,7 @@ Pod::Spec.new do |s|
     s.resources             = 'KarteTracker.embeddedframework/Resources/KarteTrackerResources.bundle'
     s.compiler_flags        = '-ObjC'
     s.ios.frameworks        = 'WebKit'
+    s.ios.weak_framworks    = 'AdSupport'
   else
     s.source                = { :git => 'https://github.com/plaidev/tracker-ios.git', :tag => 'v0.0.0' }
     s.source_files          = 'KarteTracker/Classes/**/*'
