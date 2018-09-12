@@ -7,7 +7,6 @@
 
 #import <Foundation/Foundation.h>
 
-extern const NSString * KarteNotificationKey;
 
 @interface KarteRemoteNotificationHandler : NSObject
 + (BOOL)handleRemoteNotification:(nullable NSDictionary *)userInfo;
