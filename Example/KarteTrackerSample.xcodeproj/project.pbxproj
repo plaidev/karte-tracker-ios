@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0C33141E208F274A00405420 /* NotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C33141D208F274A00405420 /* NotificationService.m */; };
 		0C331422208F274A00405420 /* NotificationService.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0C33141A208F274A00405420 /* NotificationService.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		0C52715820AEE9210047A186 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2D1823FC205BCFFB00783CE6 /* GoogleService-Info.plist */; };
 		2DF1DA762057B05D00CC56B0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DF1DA752057B05D00CC56B0 /* AppDelegate.m */; };
 		2DF1DA792057B05D00CC56B0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DF1DA782057B05D00CC56B0 /* ViewController.m */; };
 		2DF1DA7C2057B05D00CC56B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DF1DA7A2057B05D00CC56B0 /* Main.storyboard */; };
@@ -185,6 +184,7 @@
 				2DF1DA6E2057B05D00CC56B0 /* Frameworks */,
 				2DF1DA6F2057B05D00CC56B0 /* Resources */,
 				0C331426208F274A00405420 /* Embed App Extensions */,
+				4A74B696901BC34B5B326235 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -252,7 +252,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DF1DA812057B05D00CC56B0 /* LaunchScreen.storyboard in Resources */,
-				0C52715820AEE9210047A186 /* GoogleService-Info.plist in Resources */,
 				2DF1DA7E2057B05D00CC56B0 /* Assets.xcassets in Resources */,
 				2DF1DA7C2057B05D00CC56B0 /* Main.storyboard in Resources */,
 			);
@@ -277,6 +276,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A74B696901BC34B5B326235 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-KarteTrackerSample/Pods-KarteTrackerSample-resources.sh",
+				"${PODS_ROOT}/KarteTracker/KarteTracker.embeddedframework/Resources/KarteTrackerResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/KarteTrackerResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KarteTrackerSample/Pods-KarteTrackerSample-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		61276070F0887800ACE2330F /* [CP] Check Pods Manifest.lock */ = {

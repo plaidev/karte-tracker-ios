@@ -180,6 +180,7 @@
 				2DF1DA6E2057B05D00CC56B0 /* Frameworks */,
 				2DF1DA6F2057B05D00CC56B0 /* Resources */,
 				0C331426208F274A00405420 /* Embed App Extensions */,
+				3F01E94F8C0412F2BD0E6D59 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -258,6 +259,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3F01E94F8C0412F2BD0E6D59 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-KarteTrackerSample/Pods-KarteTrackerSample-resources.sh",
+				"${PODS_ROOT}/KarteTracker/KarteTracker.embeddedframework/Resources/KarteTrackerResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/KarteTrackerResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KarteTrackerSample/Pods-KarteTrackerSample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		61276070F0887800ACE2330F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
