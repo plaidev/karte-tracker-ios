@@ -23,6 +23,4 @@
 - (BOOL)boolWithDefaultValue:(BOOL)defaultValue NS_SWIFT_NAME(boolean(defaultValue:));
 - (nonnull NSArray *)arrayWithDefaultValue:(nonnull NSArray *)defaultValue NS_SWIFT_NAME(array(defaultValue:));
 - (nonnull NSDictionary *)dictionaryWithDefaultValue:(nonnull NSDictionary *)defaultValue NS_SWIFT_NAME(dictionary(defaultValue:));
-
-- (BOOL)isDefined;
 @end
