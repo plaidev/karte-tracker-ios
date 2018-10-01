@@ -18,15 +18,15 @@ class ViewController: UIViewController {
     
     @IBAction func tapIdentify(sender: Any) {
         let userId = userIdField.text ?? ""
-        KarteTracker.shared()?.identify(["user_id": userId])
+        KarteTracker.shared.identify(["user_id": userId])
     }
     
     @IBAction func tapSendView(sender: Any) {
         let viewName = viewNameField.text ?? ""
-        KarteTracker.shared()?.view(viewName)
+        KarteTracker.shared.view(viewName)
     }
     
     @IBAction func tapSendBuy(sender: Any) {
-        KarteTracker.shared()?.track("buy", values: ["revenue": 100])
+        KarteTracker.shared.track("buy", values: ["revenue": 100])
     }
 }

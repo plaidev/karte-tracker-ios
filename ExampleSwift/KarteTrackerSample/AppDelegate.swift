@@ -14,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FirebaseApp.configure()
         
         // KARTE SDKの初期化
-        KarteTracker.setup(withAppKey: appKey)
+        KarteTracker.setup(appKey: appKey)
         
         // 通知関連の初期化
         Messaging.messaging().delegate = self
@@ -77,7 +77,7 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
 extension AppDelegate: MessagingDelegate {
     
     func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String) {
-        KarteTracker.shared()?.registerFCMToken(fcmToken)
+        KarteTracker.shared.registerFCMToken(fcmToken)
     }
     
     func messaging(_ messaging: Messaging, didReceive remoteMessage: MessagingRemoteMessage) {

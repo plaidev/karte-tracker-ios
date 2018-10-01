@@ -11,7 +11,7 @@
 		0C52715020AEDD670047A186 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C52714F20AEDD670047A186 /* AppDelegate.swift */; };
 		0C52715220AEE35A0047A186 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C52715120AEE35A0047A186 /* ViewController.swift */; };
 		0C52715520AEE4A70047A186 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C52715420AEE4A70047A186 /* NotificationService.swift */; };
-		0C52715620AEE6540047A186 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2D1823FC205BCFFB00783CE6 /* GoogleService-Info.plist */; };
+		0C53116F2161E11C0095ECC8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2D1823FC205BCFFB00783CE6 /* GoogleService-Info.plist */; };
 		2DF1DA7C2057B05D00CC56B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DF1DA7A2057B05D00CC56B0 /* Main.storyboard */; };
 		2DF1DA7E2057B05D00CC56B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DF1DA7D2057B05D00CC56B0 /* Assets.xcassets */; };
 		2DF1DA812057B05D00CC56B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DF1DA7F2057B05D00CC56B0 /* LaunchScreen.storyboard */; };
@@ -250,7 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DF1DA812057B05D00CC56B0 /* LaunchScreen.storyboard in Resources */,
-				0C52715620AEE6540047A186 /* GoogleService-Info.plist in Resources */,
+				0C53116F2161E11C0095ECC8 /* GoogleService-Info.plist in Resources */,
 				2DF1DA7E2057B05D00CC56B0 /* Assets.xcassets in Resources */,
 				2DF1DA7C2057B05D00CC56B0 /* Main.storyboard in Resources */,
 			);

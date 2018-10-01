@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0C33141E208F274A00405420 /* NotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C33141D208F274A00405420 /* NotificationService.m */; };
 		0C331422208F274A00405420 /* NotificationService.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0C33141A208F274A00405420 /* NotificationService.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0C5311702161E1570095ECC8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2D1823FC205BCFFB00783CE6 /* GoogleService-Info.plist */; };
 		2DF1DA762057B05D00CC56B0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DF1DA752057B05D00CC56B0 /* AppDelegate.m */; };
 		2DF1DA792057B05D00CC56B0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DF1DA782057B05D00CC56B0 /* ViewController.m */; };
 		2DF1DA7C2057B05D00CC56B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DF1DA7A2057B05D00CC56B0 /* Main.storyboard */; };
@@ -252,6 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DF1DA812057B05D00CC56B0 /* LaunchScreen.storyboard in Resources */,
+				0C5311702161E1570095ECC8 /* GoogleService-Info.plist in Resources */,
 				2DF1DA7E2057B05D00CC56B0 /* Assets.xcassets in Resources */,
 				2DF1DA7C2057B05D00CC56B0 /* Main.storyboard in Resources */,
 			);
