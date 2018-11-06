@@ -60,4 +60,5 @@
 @protocol KarteTrackerDelegate <NSObject>
 @required
 - (void)karteTracker:(KarteTracker *)tracker receivedResponse:(NSDictionary *)responseBody;
+- (void)karteTrackerDidPresentNewPage:(KarteTracker *)tracker;
 @end
