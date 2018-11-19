@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name                    = 'KarteTracker'
-  s.version                 = '1.3.3'
+  s.version                 = '1.4.4'
   s.summary                 = 'KARTE SDK for iOS'
   s.homepage                = 'https://karte.io/'
   s.author                  = { 'Plaid' => 'dev.share@plaid.co.jp' }
@@ -35,5 +35,6 @@ Pod::Spec.new do |s|
     s.public_header_files   = 'KarteTracker/Classes/*.h'
     s.private_header_files  = 'KarteTracker/Classes/Private/*.h'
     s.resource_bundles      = { 'KarteTrackerResources' => 'KarteTracker/Assets/*' }
+    s.pod_target_xcconfig   = { 'OTHER_CFLAGS' => '-fembed-bitcode' }
   end
 end
