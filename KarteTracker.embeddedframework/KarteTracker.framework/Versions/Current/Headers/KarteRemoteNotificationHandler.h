@@ -11,4 +11,5 @@
 @interface KarteRemoteNotificationHandler : NSObject
 + (BOOL)handleRemoteNotification:(nullable NSDictionary *)userInfo;
 + (BOOL)canHandleRemoteNotification:(nullable NSDictionary *)userInfo;
++ (nullable NSURL *)retrieveURLFromUserInfo:(nullable NSDictionary *)userInfo NS_SWIFT_NAME(retrieveURL(userInfo:));
 @end
