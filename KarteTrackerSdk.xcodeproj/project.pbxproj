@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		82435A822227DFD5001F927F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82435A812227DFD5001F927F /* SystemConfiguration.framework */; };
 		824D7F3A2224EFB000EE4D53 /* KarteTrackerSdk.h in Headers */ = {isa = PBXBuildFile; fileRef = 824D7F382224EFB000EE4D53 /* KarteTrackerSdk.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		824D7F422224F03C00EE4D53 /* KarteTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 824D7F412224F03C00EE4D53 /* KarteTracker.framework */; };
 		824D7F442224F04100EE4D53 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 824D7F432224F04100EE4D53 /* AdSupport.framework */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		82435A812227DFD5001F927F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		824D7F352224EFB000EE4D53 /* KarteTrackerSdk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KarteTrackerSdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		824D7F382224EFB000EE4D53 /* KarteTrackerSdk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KarteTrackerSdk.h; sourceTree = "<group>"; };
 		824D7F392224EFB000EE4D53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82435A822227DFD5001F927F /* SystemConfiguration.framework in Frameworks */,
 				824D7F4A2224F05B00EE4D53 /* UIKit.framework in Frameworks */,
 				824D7F482224F04F00EE4D53 /* CoreGraphics.framework in Frameworks */,
 				824D7F462224F04A00EE4D53 /* WebKit.framework in Frameworks */,
@@ -100,6 +103,7 @@
 		824D7F402224F03B00EE4D53 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				82435A812227DFD5001F927F /* SystemConfiguration.framework */,
 				824D7F492224F05B00EE4D53 /* UIKit.framework */,
 				824D7F472224F04F00EE4D53 /* CoreGraphics.framework */,
 				824D7F452224F04A00EE4D53 /* WebKit.framework */,
