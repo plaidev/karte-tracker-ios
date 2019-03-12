@@ -51,7 +51,10 @@
 - (void)view:(nonnull NSString *)viewName title:(nonnull NSString *)title;
 - (void)view:(nonnull NSString *)viewName title:(nonnull NSString *)title values:(nullable NSDictionary *)values;
 - (void)view:(nonnull NSString *)viewName values:(nullable NSDictionary *)values;
-- (void)logoutWithCompletionBlock:(nonnull void (^)(BOOL isSuccessful))completion NS_SWIFT_NAME(logout(_:));
+
+- (void)logoutWithCompletionBlock:(nonnull void (^)(BOOL isSuccessful))completion NS_SWIFT_NAME(logout(_:)) __attribute__((deprecated("Use -[KarteTracker logout]")));
+;
+- (void)logout;
 @end
 
 
