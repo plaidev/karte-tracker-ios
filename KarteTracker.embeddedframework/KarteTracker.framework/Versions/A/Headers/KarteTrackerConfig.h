@@ -23,7 +23,6 @@
 @property (nonatomic, assign, readonly, getter=isEnabledFCMTokenResend) BOOL enabledFCMTokenResend NS_SWIFT_NAME(isEnabledFCMTokenResend);
 @property (nonatomic, assign, readonly, getter=isDryRun) BOOL dryRun NS_SWIFT_NAME(isDryRun);
 
-- (nonnull instancetype)initWithConfig:(NSDictionary *)config NS_SWIFT_NAME(init(_:)) __attribute__((deprecated("Use +[KarteTrackerConfig configureWithBuilder:] or -[KarteTrackerConfig initWithBuilder:]")));
 - (nonnull instancetype)initWithBuilder:(KarteTrackerConfigBuilder *)builder NS_SWIFT_NAME(init(_:));
 + (nonnull instancetype)configureWithBuilder:(void (^)(KarteTrackerConfigBuilder *_Nonnull builder))closure NS_SWIFT_NAME(configure(_:));
 

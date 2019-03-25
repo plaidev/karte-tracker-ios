@@ -32,11 +32,9 @@
 
 + (nonnull instancetype)sharedTrackerWithAppKey:(nonnull NSString *)appKey NS_SWIFT_NAME(shared(appKey:));
 + (nonnull instancetype)setupWithAppKey:(nonnull NSString *)appKey NS_SWIFT_NAME(setup(appKey:));
-+ (nonnull instancetype)setupWithAppKey:(nonnull NSString *)appKey config:(nullable NSDictionary *)config __attribute__((deprecated("Use +[KarteTracker setupWithAppKey:withConfig]")));
 + (nonnull instancetype)setupWithAppKey:(nonnull NSString *)appKey withConfig:(nonnull KarteTrackerConfig *)config NS_SWIFT_NAME(setup(appKey:config:));
 
 - (nonnull instancetype)initWithAppKey:(nonnull NSString *)appKey NS_SWIFT_NAME(init(appKey:));
-- (nonnull instancetype)initWithAppKey:(nonnull NSString *)appKey config:(nullable NSDictionary *)config __attribute__((deprecated("Use -[KarteTracker initWithAppKey:withConfig]")));
 - (nonnull instancetype)initWithAppKey:(nonnull NSString *)appKey withConfig:(nonnull KarteTrackerConfig *)config NS_SWIFT_NAME(init(appKey:config:));
 
 @end
@@ -52,7 +50,7 @@
 - (void)view:(nonnull NSString *)viewName title:(nonnull NSString *)title values:(nullable NSDictionary *)values;
 - (void)view:(nonnull NSString *)viewName values:(nullable NSDictionary *)values;
 
-- (void)logoutWithCompletionBlock:(nonnull void (^)(BOOL isSuccessful))completion NS_SWIFT_NAME(logout(_:)) __attribute__((deprecated("Use -[KarteTracker logout]")));
+- (void)logoutWithCompletionBlock:(nonnull void (^)(BOOL isSuccessful))completion NS_SWIFT_NAME(logout(_:)) __attribute__((deprecated("Use -[KarteTracker logout]. since v1.5.3")));
 ;
 - (void)logout;
 @end
