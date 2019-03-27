@@ -8,6 +8,7 @@
 #import <Foundation/Foundation.h>
 
 #import "KarteTrackerConfigBuilder.h"
+#import "KarteIDFADelegate.h"
 
 
 @interface KarteTrackerConfig : NSObject
@@ -18,10 +19,11 @@
 
 @property (nonatomic, assign, readonly, getter=isEnabledTrackingAppLifecycle) BOOL enabledTrackingAppLifecycle NS_SWIFT_NAME(isEnabledTrackingAppLifecycle);
 @property (nonatomic, assign, readonly, getter=isEnabledTrackingAppOpen) BOOL enabledTrackingAppOpen NS_SWIFT_NAME(isEnabledTrackingAppOpen);
-@property (nonatomic, assign, readonly, getter=isEnabledTrackingIdfa) BOOL enabledTrackingIdfa NS_SWIFT_NAME(isEnabledTrackingIdfa);
+@property (nonatomic, assign, readonly, getter=isEnabledTrackingIdfa) BOOL enabledTrackingIdfa NS_SWIFT_NAME(isEnabledTrackingIdfa) __attribute__((deprecated("Use -[KarteTrackerConfig IDFADelegate]. since v1.5.5")));
 @property (nonatomic, assign, readonly, getter=isEnabledTrackingCrashError) BOOL enabledTrackingCrashError NS_SWIFT_NAME(isEnabledTrackingCrashError);
 @property (nonatomic, assign, readonly, getter=isEnabledFCMTokenResend) BOOL enabledFCMTokenResend NS_SWIFT_NAME(isEnabledFCMTokenResend);
 @property (nonatomic, assign, readonly, getter=isDryRun) BOOL dryRun NS_SWIFT_NAME(isDryRun);
+@property (nonatomic, weak, readonly, nullable) id<KarteIDFADelegate> IDFADelegate;
 
 - (nonnull instancetype)initWithBuilder:(KarteTrackerConfigBuilder *)builder NS_SWIFT_NAME(init(_:));
 + (nonnull instancetype)configureWithBuilder:(void (^)(KarteTrackerConfigBuilder *_Nonnull builder))closure NS_SWIFT_NAME(configure(_:));
