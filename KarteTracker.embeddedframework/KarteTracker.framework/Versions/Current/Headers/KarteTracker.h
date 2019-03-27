@@ -8,6 +8,7 @@
 #import <Foundation/Foundation.h>
 
 #import "KarteConstants.h"
+#import "KarteIDFADelegate.h"
 #import "KarteInAppMessagingManager.h"
 #import "KarteLogger.h"
 #import "KarteRemoteNotificationHandler.h"
