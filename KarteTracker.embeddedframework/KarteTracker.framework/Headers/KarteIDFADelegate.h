@@ -2,7 +2,7 @@
 //  KarteIDFADelegate.h
 //  KarteTracker
 //
-//  Created by tomoki.koga on 2019/03/27.
+//  Copyright (c) 2019 PLAID inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
