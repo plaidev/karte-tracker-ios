@@ -24,6 +24,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign, readonly, getter=isEnabledTrackingIdfa) BOOL enabledTrackingIdfa NS_SWIFT_NAME(isEnabledTrackingIdfa) __attribute__((deprecated("Use -[KarteTrackerConfig IDFADelegate]. since v1.5.5")));
 @property (nonatomic, assign, readonly, getter=isEnabledTrackingCrashError) BOOL enabledTrackingCrashError NS_SWIFT_NAME(isEnabledTrackingCrashError);
 @property (nonatomic, assign, readonly, getter=isEnabledFCMTokenResend) BOOL enabledFCMTokenResend NS_SWIFT_NAME(isEnabledFCMTokenResend);
+@property (nonatomic, assign, readonly, getter=isEnabledOptOutDefault) BOOL enabledOptOutDefault NS_SWIFT_NAME(isEnabledOptOutDefault);
 @property (nonatomic, assign, readonly, getter=isDryRun) BOOL dryRun NS_SWIFT_NAME(isDryRun);
 @property (nonatomic, weak, readonly) id<KarteIDFADelegate> IDFADelegate;
 
