@@ -40,6 +40,9 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initWithAppKey:(NSString *)appKey NS_SWIFT_NAME(init(appKey:));
 - (instancetype)initWithAppKey:(NSString *)appKey withConfig:(KarteTrackerConfig *)config NS_SWIFT_NAME(init(appKey:config:));
 
+- (void)optOut;
+- (void)optIn;
+
 @end
 
 
