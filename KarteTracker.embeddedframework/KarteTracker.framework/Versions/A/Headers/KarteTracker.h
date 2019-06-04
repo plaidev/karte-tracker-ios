@@ -58,11 +58,16 @@ NS_ASSUME_NONNULL_BEGIN
 
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wdeprecated-declarations"
-- (void)logoutWithCompletionBlock:(void (^)(BOOL isSuccessful))completion NS_SWIFT_NAME(logout(_:)) __attribute__((deprecated("Use -[KarteTracker logout]. since v1.5.3")));
+- (void)logoutWithCompletionBlock:(void (^)(BOOL isSuccessful))completion NS_SWIFT_NAME(logout(_:)) __attribute__((deprecated("Use -[KarteTracker renewVisitorId]. since v1.5.3")));
 ;
 #pragma clang diagnostic pop
 
-- (void)logout;
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+- (void)logout __attribute__((deprecated("Use -[KarteTracker renewVisitorId]. since v1.5.9")));
+#pragma clang diagnostic pop
+
+- (void)renewVisitorId;
 @end
 
 

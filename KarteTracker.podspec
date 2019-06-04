@@ -8,12 +8,12 @@
 
 Pod::Spec.new do |s|
   s.name                    = 'KarteTracker'
-  s.version                 = '1.5.8'
+  s.version                 = '1.5.9'
   s.summary                 = 'KARTE SDK for iOS'
-  s.homepage                = 'https://karte.io/'
+  s.homepage                = 'https://karte.io'
   s.author                  = { 'Plaid' => 'dev.share@plaid.co.jp' }
   s.social_media_url        = 'https://twitter.com/karte_io'
-  s.documentation_url       = 'https://karteio.readme.io/docs/ios'
+  s.documentation_url       = 'https://developers.karte.io/docs/ios-sdk'
   s.license                 = {
     :type => 'Commercial',
     :text => 'Copyright© Plaid Inc., All Rights Reserved.'
