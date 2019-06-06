@@ -18,10 +18,12 @@
 #import "KarteTrackerUtil.h"
 #import "KarteVariable.h"
 #import "KarteVariables.h"
+#import "KarteUrlSchemeHandler.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol KarteTrackerDelegate;
+@protocol KarteVisualTrackDelegate;
 @class KarteTrackerAppProfile;
 @class KarteTrackerUserProfile;
 

@@ -26,6 +26,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign, readonly, getter=isEnabledFCMTokenResend) BOOL enabledFCMTokenResend NS_SWIFT_NAME(isEnabledFCMTokenResend);
 @property (nonatomic, assign, readonly, getter=isEnabledOptOutDefault) BOOL enabledOptOutDefault NS_SWIFT_NAME(isEnabledOptOutDefault);
 @property (nonatomic, assign, readonly, getter=isDryRun) BOOL dryRun NS_SWIFT_NAME(isDryRun);
+@property (nonatomic, assign, readonly, getter=isEnabledVisualTracking) BOOL enabledVisualTracking NS_SWIFT_NAME(isEnabledVisualTracking);
 @property (nonatomic, weak, readonly) id<KarteIDFADelegate> IDFADelegate;
 
 - (instancetype)initWithBuilder:(KarteTrackerConfigBuilder *)builder NS_SWIFT_NAME(init(_:));
