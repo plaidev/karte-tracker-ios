@@ -18,6 +18,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, weak) id<KarteInAppMessagingManagerDelegate> delegate;
 
 - (void)dismiss;
+- (void)suppress;
+- (void)unsuppress;
+
 @end
 
 @protocol KarteInAppMessagingManagerDelegate <NSObject>
