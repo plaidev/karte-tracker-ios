@@ -22,18 +22,25 @@ Pod::Spec.new do |s|
   s.requires_arc            = true
   s.ios.deployment_target   = '8.0'
 
-  if ENV['RELEASE'] == 'true' then
-    s.source                = { :git => 'https://github.com/plaidev/karte-tracker-ios.git', :tag => "v#{s.version}" }
-    s.vendored_frameworks   = 'KarteTracker.embeddedframework/KarteTracker.framework'
-    s.resources             = 'KarteTracker.embeddedframework/Resources/KarteTrackerResources.bundle'
-    s.compiler_flags        = '-ObjC'
-    s.ios.frameworks        = 'WebKit'
-  else
-    s.source                = { :git => 'https://github.com/plaidev/tracker-ios.git', :tag => 'v0.0.0' }
-    s.source_files          = 'KarteTracker/Classes/**/*'
-    s.public_header_files   = 'KarteTracker/Classes/**/*.h'
-    s.private_header_files  = 'KarteTracker/Classes/**/Private/*.h','KarteTracker/Classes/**/Private/*/*.h'
-    s.resource_bundles      = { 'KarteTrackerResources' => 'KarteTracker/Assets/*' }
-    s.pod_target_xcconfig   = { 'OTHER_CFLAGS' => '-fembed-bitcode' }
-  end
+  s.source                = { :git => 'https://github.com/plaidev/karte-tracker-ios.git', :tag => "v#{s.version}" }
+  s.vendored_frameworks   = 'KarteTracker.embeddedframework/KarteTracker.framework'
+  s.resources             = 'KarteTracker.embeddedframework/Resources/KarteTrackerResources.bundle'
+  s.compiler_flags        = '-ObjC'
+  s.ios.frameworks        = 'WebKit'
+  s.dependency 'KarteCrashReporter', '~> 1.2.3'
+
+  # if ENV['RELEASE'] == 'true' then
+  #   s.source                = { :git => 'https://github.com/plaidev/karte-tracker-ios.git', :tag => "v#{s.version}" }
+  #   s.vendored_frameworks   = 'KarteTracker.embeddedframework/KarteTracker.framework'
+  #   s.resources             = 'KarteTracker.embeddedframework/Resources/KarteTrackerResources.bundle'
+  #   s.compiler_flags        = '-ObjC'
+  #   s.ios.frameworks        = 'WebKit'
+  # else
+  #   s.source                = { :git => 'https://github.com/plaidev/tracker-ios.git', :tag => 'v0.0.0' }
+  #   s.source_files          = 'KarteTracker/Classes/**/*'
+  #   s.public_header_files   = 'KarteTracker/Classes/**/*.h'
+  #   s.private_header_files  = 'KarteTracker/Classes/**/Private/*.h','KarteTracker/Classes/**/Private/*/*.h'
+  #   s.resource_bundles      = { 'KarteTrackerResources' => 'KarteTracker/Assets/*' }
+  #   s.pod_target_xcconfig   = { 'OTHER_CFLAGS' => '-fembed-bitcode' }
+  # end
 end
