@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
   s.requires_arc            = true
   s.ios.deployment_target   = '8.0'
 
-  s.source                = { :git => 'https://github.com/plaidev/karte-tracker-ios.git', :tag => "v#{s.version}" }
+  s.source                = { :git => 'https://github.com/plaidev/karte-tracker-ios.git', :branch => 'test' }
   s.vendored_frameworks   = 'KarteTracker.embeddedframework/KarteTracker.framework'
   s.resources             = 'KarteTracker.embeddedframework/Resources/KarteTrackerResources.bundle'
   s.compiler_flags        = '-ObjC'
