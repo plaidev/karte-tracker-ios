@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name                    = 'KarteTracker'
-  s.version                 = '1.6.2'
+  s.version                 = '1.6.3'
   s.summary                 = 'KARTE SDK for iOS'
   s.homepage                = 'https://karte.io'
   s.author                  = { 'Plaid' => 'dev.share@plaid.co.jp' }
@@ -21,6 +21,7 @@ Pod::Spec.new do |s|
   s.platform                = :ios
   s.requires_arc            = true
   s.ios.deployment_target   = '8.0'
+  
 
   if ENV['RELEASE'] == 'true' then
     s.source                = { :git => 'https://github.com/plaidev/karte-tracker-ios.git', :tag => "v#{s.version}" }
@@ -34,6 +35,12 @@ Pod::Spec.new do |s|
     s.public_header_files   = 'KarteTracker/Classes/**/*.h'
     s.private_header_files  = 'KarteTracker/Classes/**/Private/*.h','KarteTracker/Classes/**/Private/*/*.h'
     s.resource_bundles      = { 'KarteTrackerResources' => 'KarteTracker/Assets/*' }
-    s.pod_target_xcconfig   = { 'OTHER_CFLAGS' => '-fembed-bitcode' }
+    s.static_framework      = true
+    
+    s.dependency 'KarteCrashReporter', '~> 1.2.3'
+    s.pod_target_xcconfig   = {
+        'OTHER_CFLAGS' => '-fembed-bitcode',
+        'FRAMEWORK_SEARCH_PATHS' => '"${PODS_ROOT}/KarteCrashReporter"'
+    }
   end
 end
