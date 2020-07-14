@@ -17,9 +17,9 @@ typedef NS_ENUM(NSUInteger, KarteLogLevel) {
 };
 
 
-@interface KarteLogger : NSObject <NSCopying>
-@property (class, strong, readonly) KarteLogger *sharedLogger;
-@property (nonatomic, assign) KarteLogLevel logLevel;
+@interface KarteLogger : NSObject<NSCopying>
+@property(class, strong, readonly) KarteLogger *sharedLogger;
+@property (nonatomic, assign) KarteLogLevel logLevel __attribute__((deprecated("Use -[KRTApp setLogLevel:] instead.")));
 
 @end
 
