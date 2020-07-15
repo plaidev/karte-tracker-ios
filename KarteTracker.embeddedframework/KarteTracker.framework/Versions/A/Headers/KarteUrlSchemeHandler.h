@@ -11,7 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 @interface KarteUrlSchemeHandler : NSObject
-+ (BOOL)handle:(nullable NSURL *)url;
++ (BOOL)handle:(nullable NSURL *)url __attribute__((deprecated("Use +[KRTApp application:openURL:] instead.")));
 @end
 
 NS_ASSUME_NONNULL_END
